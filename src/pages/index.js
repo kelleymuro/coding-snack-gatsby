@@ -2,15 +2,15 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Header from "../components/header";
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 import Card from "../components/Card";
 import Section from "../components/Section";
 import Wave from "../components/Wave";
-import staticdata from '../../staticdata.json'
+import staticdata from '../../staticdata.json';
 import Cell from "../components/Cell";
 import styled from 'styled-components';
+import Footer from "../components/Footer";
 
 const SectionCaption = styled.p`
 font-weight: 600px;
@@ -45,10 +45,10 @@ const IndexPage = () => (
         <p className="hero-valueProp">FREE tutorials that teach you things you will actually use in your next project</p>
         <Link to="/page-2/">Subscribe On Youtube</Link>
         <div className="Logos">
-          <img src={require('../images/_logo-react.png')} alt="logo" width="50"></img>
-          <img src={require('../images/logo-javascript.png')} alt="logo" width="50"></img>
-          <img src={require('../images/logo-css.png')} alt="logo" width="50"></img>
-          <img src={require('../images/logo-node.png')} alt="logo" width="50"></img>
+          <img src={require('../images/_logo-react.png')}  width="50" alt="logos-react"></img>
+          <img src={require('../images/logo-javascript.png')}  width="50" alt="logos-js"></img>
+          <img src={require('../images/logo-css.png')}  width="50" alt="logos-css"></img>
+          <img src={require('../images/logo-node.png')}  width="50" alt="logos-node"></img>
         </div>
         <Wave />
       </div>

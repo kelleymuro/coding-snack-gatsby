@@ -9,8 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Header from './header'
 import "./layout.css"
+import Footer from "./Footer";
+
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -21,7 +23,7 @@ const Layout = ({ children }) => (
             title
           }
         }
-      allContentfulLink {
+         allContentfulLink {
         edges {
          node {
           title
@@ -32,13 +34,11 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <> 
-          <main>  
+      <>
+        <main>
           {children}
-          {data.allContentfulLink.edges.map( edge => (
-            <a href={edges.node.link}> {edges.node.title}</a>
-          ))} 
-          </main>  
+        </main>
+        <Footer data={data} />
       </>
     )}
   />
@@ -49,5 +49,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-
