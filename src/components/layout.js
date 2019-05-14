@@ -34,7 +34,10 @@ const Layout = ({ children }) => (
     render={data => (
       <> 
           <main>  
-          {children} 
+          {children}
+          {data.allContentfulLink.edges.map( edge => (
+            <a href={edges.node.link}> {edges.node.title}</a>
+          ))} 
           </main>  
       </>
     )}
