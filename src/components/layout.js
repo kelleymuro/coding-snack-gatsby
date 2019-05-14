@@ -21,11 +21,21 @@ const Layout = ({ children }) => (
             title
           }
         }
+      allContentfulLink {
+        edges {
+         node {
+          title
+          url
+      }
+    }
+  }
       }
     `}
     render={data => (
       <> 
-          <main>{children}</main>        
+          <main>  
+          {children} 
+          </main>  
       </>
     )}
   />
@@ -36,3 +46,5 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+

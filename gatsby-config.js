@@ -1,11 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Demo Gatsby React App`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Coding Snacks`,
+    description: `Coding snacks are small short tutorials that you can easily consume and start using in your own project.`,
     author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+     {
+       resolve: 'gatsby-source-contentful',
+       options: {
+         spaceId: 'zsywi1fz4jc0',
+         accessToken: 'JlN-Ie8jLooISyKisxk3bD8sebGlsRWqYNLc2asT1GU'
+       }
+     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,7 +31,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/_logo-figma.png`, // This path is relative to the root of the site.
+        icon: `src/images/_logo-react.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
