@@ -44,6 +44,23 @@
     transform: translateY(-3px);
 }
 
+.cta {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    background: #000000;
+    padding: 15px 20px;
+    border-radius: 20px;
+    transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
+  }
+  
+  .cta:hover {
+    background: #ffffff;
+    color: #000000;
+    
+  }
+
 @media (max-width: 640px) {
     .Header {
         padding: 15px 0;

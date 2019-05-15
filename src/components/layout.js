@@ -77,7 +77,7 @@ const Layout = ({ children }) => (
               FREE tutorials that teach you things you will actually use in your
               next project
             </p>
-            <Link to="/page-2/">Subscribe On Youtube</Link>
+            <Link className="cta" to="/page-2/">Subscribe On Youtube</Link>
             <div className="Logos">
               <img
                 src={require("../images/_logo-react.png")}
