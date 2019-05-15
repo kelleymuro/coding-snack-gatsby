@@ -23,11 +23,12 @@ const Layout = ({ children }) => (
             title
           }
         }
-         allContentfulLink {
+         allContentfulLink(sort: { fields: [createdAt], order: ASC }) {
         edges {
          node {
           title
           url
+          createdAt
       }
     }
   }
@@ -38,7 +39,9 @@ const Layout = ({ children }) => (
         <main>
           {children}
         </main>
-        <Footer data={data} />
+        <Footer data={data}> 
+        Designed with the help of Meng To. Built with React & Gatsby.
+        </Footer>
       </>
     )}
   />

@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Header from "../components/header";
+import Footer from "../components/Footer";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Card from "../components/Card";
@@ -10,7 +11,6 @@ import Wave from "../components/Wave";
 import staticdata from '../../staticdata.json';
 import Cell from "../components/Cell";
 import styled from 'styled-components';
-import Footer from "../components/Footer";
 
 const SectionCaption = styled.p`
 font-weight: 600px;
@@ -100,10 +100,8 @@ const IndexPage = () => (
             />
           ))}
         </SectionCellGroup>
-
-    </div>
-
-   
+    </div>  
+      
   </Layout>
 )
 
